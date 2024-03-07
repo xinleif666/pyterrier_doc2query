@@ -1,0 +1,335 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Passage: The presence of communication amid scientific minds was equally important to the success of the Manhattan Project as scientific intellect was. The only cloud hanging over the impressive achievement of the atomic researchers and engineers is
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00,  1.04batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00,  1.04batches/s]
+Query: what their success truly meant; hundreds of thousands of innocent lives obliterated.?, Score: -10.912517547607422
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.74batches/s]
+Query: what was important to the success of the manhattan project?, Score: -0.0015538772568106651
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.23batches/s]
+Query: why was the manhattan project important?, Score: -0.030020689591765404
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.49batches/s]
+Query: what was important about the manhattan project?, Score: -0.006883479189127684
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.23batches/s]
+Query: why was the success of the manhattan project so important?, Score: -0.007985688745975494
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.53batches/s]
+Query: who was the manhattan project a scientific project for?, Score: -0.09621892124414444
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.12batches/s]
+Query: what was the manhattan project important for?, Score: -0.019367750734090805
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.24batches/s]
+Query: why was the manhattan project a success?, Score: -0.020185289904475212
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.34batches/s]
+Query: how was the success of the manhattan project?, Score: -0.01896931603550911
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.86batches/s]
+Query: why was the manhattan project important to the success of the project?, Score: -0.004634235519915819
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.15batches/s]
+Query: what is the importance of communication amongst scientific minds?, Score: -0.0020428281277418137
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.07batches/s]
+Query: what was the importance of scientific communication for the success of the manhattan project?, Score: -0.001716570113785565
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.23batches/s]
+Query: what was the purpose of the manhattan project?, Score: -4.143985271453857
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.47batches/s]
+Query: why was the manhattan project significant?, Score: -0.13472577929496765
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.05batches/s]
+Query: why did scientists believe in atomic power?, Score: -10.1834135055542
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.35batches/s]
+Query: why did scientists and engineers have to communicate?, Score: -0.09643338620662689
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 46.83batches/s]
+Query: why did scientists and engineers want to be involved in the manhattan project?, Score: -0.10976896435022354
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.93batches/s]
+Query: why are the scientists so valuable?, Score: -10.305758476257324
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.40batches/s]
+Query: which of the following was an important outcome of the manhattan project?, Score: -0.03285070136189461
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.49batches/s]
+Query: why was the manhattan project successful?, Score: -0.021177945658564568
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.23batches/s]
+Query: why was the manhattan project an important scientific achievement?, Score: -0.01021939143538475
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.78batches/s]
+Query: what was the success of manhattan?, Score: -0.03646509721875191
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.45batches/s]
+Query: what was the result of the manhattan project?, Score: -1.7845627069473267
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.25batches/s]
+Query: why was communications important to the success of the manhattan project?, Score: -0.005923099350184202
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.64batches/s]
+Query: why the manhattan project was important?, Score: -0.02278563380241394
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.46batches/s]
+Query: why is it important to know?, Score: -13.460275650024414
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.15batches/s]
+Query: who is the manhattan project?, Score: -7.534493923187256
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.16batches/s]
+Query: what was the most important accomplishment to the success of the manhattan project?, Score: -0.010378203354775906
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.42batches/s]
+Query: why was the manhattan project an important achievement?, Score: -0.022909140214323997
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.19batches/s]
+Query: why was the manhattan project important to the success of the atomic bomb?, Score: -0.006534873507916927
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.68batches/s]
+Query: how did the manhattan project impact scientists?, Score: -0.03599223494529724
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.79batches/s]
+Query: what were the effects of the manhattan project?, Score: -3.1908068656921387
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.40batches/s]
+Query: what were the results of the manhattan project and?, Score: -3.2645535469055176
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.54batches/s]
+Query: how did they affect the public?, Score: -13.866372108459473
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.50batches/s]
+Query: what was the manhattan project?, Score: -5.612372398376465
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.15batches/s]
+Query: why did scientists contribute to the success of the manhattan project?, Score: -0.020773926749825478
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.43batches/s]
+Query: why was communication important in the manhattan project?, Score: -0.006450545974075794
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.60batches/s]
+Query: what was the effect of the manhattan project on the world?, Score: -3.57346773147583
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.95batches/s]
+Query: what was the importance of communication in the success of the manhattan project?, Score: -0.002150129759684205
+Passage: The Manhattan Project and its atomic bomb helped bring an end to World War II. Its legacy of peaceful uses of atomic energy continues to have an impact on history and science.
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.44batches/s]
+Query: what were a major contributions to the manhattan effort?, Score: -0.22847561538219452
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.68batches/s]
+Query: what impact did the manhattan project have on history?, Score: -0.006694389972835779
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 62.03batches/s]
+Query: what is the manhattan project impact on world?, Score: -0.008131257258355618
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.97batches/s]
+Query: what helped to end world war ii?, Score: -0.025211043655872345
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 62.05batches/s]
+Query: why did the manhattan project help end world war ii?, Score: -0.03320028632879257
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.78batches/s]
+Query: why did the manhattan project bring a end to world war ii?, Score: -0.04558541253209114
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.81batches/s]
+Query: what helped bring the end of wwii and the beginning of a new era for the united states?, Score: -0.3400346636772156
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.68batches/s]
+Query: why did the manhattan project happen?, Score: -0.30732032656669617
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.22batches/s]
+Query: what was the manhattan project?, Score: -1.018788456916809
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.70batches/s]
+Query: why was the manhattan project important?, Score: -0.10050806403160095
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.61batches/s]
+Query: why was the manhattan project necessary in wwii?, Score: -0.05479462072253227
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 47.88batches/s]
+Query: what brought an end to world war ii?, Score: -0.02861982025206089
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 62.03batches/s]
+Query: what was the main purpose of the manhattan project?, Score: -0.15834173560142517
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 62.20batches/s]
+Query: why was the manhattan project a success?, Score: -0.6596445441246033
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.79batches/s]
+Query: why did the manhattan project help bring ww2 to an end?, Score: -0.018708089366555214
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.27batches/s]
+Query: why was nuclear energy important during wwii?, Score: -0.18561390042304993
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.62batches/s]
+Query: what is the impact of manhattan project on the united states?, Score: -0.23866473138332367
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.74batches/s]
+Query: what did ww2 end with the manhattan project?, Score: -0.03472982719540596
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.31batches/s]
+Query: how did the manhattan project affect the world?, Score: -0.027854597195982933
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.72batches/s]
+Query: why did the manhattan project end wwii?, Score: -0.07524199783802032
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 62.01batches/s]
+Query: what was the effect of the manhattan project?, Score: -0.11130359768867493
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.63batches/s]
+Query: who helped bring the end of world war ii?, Score: -0.026293132454156876
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.62batches/s]
+Query: what did the manhattan project do to the world?, Score: -0.04436619579792023
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.46batches/s]
+Query: what year did the manhattan project start?, Score: -8.86489200592041
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.71batches/s]
+Query: why did the manhattan project occur?, Score: -0.5547859072685242
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.38batches/s]
+Query: what effect did the manhattan project have on the world?, Score: -0.043696124106645584
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.75batches/s]
+Query: what year was the manhattan project?, Score: -7.69508695602417
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 60.33batches/s]
+Query: why was the manhattan project important to the united states?, Score: -0.17202913761138916
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.73batches/s]
+Query: how did the manhattan project help end world war ii?, Score: -0.02010958455502987
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.60batches/s]
+Query: how did the manhattan project help the end of?, Score: -0.013927885331213474
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.04batches/s]
+Query: why did the manhattan atomic bomb happen?, Score: -0.3069075047969818
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.71batches/s]
+Query: what impact did the manhattan project have on history and science?, Score: -0.005048029124736786
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.87batches/s]
+Query: what year did the manhattan project occur?, Score: -8.154129981994629
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.03batches/s]
+Query: what was the effect of the manhattan project the manhattan project and its atomic bomb?, Score: -0.029423585161566734
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.42batches/s]
+Query: what happened to the united states?, Score: -12.106512069702148
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 61.57batches/s]
+Query: what impact did the manhattan project have on history. why?, Score: -0.008654231205582619
+Passage: Essay on The Manhattan Project - The Manhattan Project The Manhattan Project was to see if making an atomic bomb possible. The success of this project would forever change the world forever making it known that something this powerful can be manmade.
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.14batches/s]
+Query: what is manhattan project?, Score: -0.0448051393032074
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.24batches/s]
+Query: why did manhattan happen?, Score: -0.1350223422050476
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.11batches/s]
+Query: what was the purpose of the manhattan project?, Score: -0.020166365429759026
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.24batches/s]
+Query: what was the manhattan project?, Score: -0.029189851135015488
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.03batches/s]
+Query: why was the manhattan project successful?, Score: -0.011603602208197117
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.78batches/s]
+Query: why was the manhattan project so successful?, Score: -0.01924941875040531
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.19batches/s]
+Query: what was the manhattan project purpose?, Score: -0.017451541498303413
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.14batches/s]
+Query: why was the manhattan project a success?, Score: -0.01235639676451683
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.18batches/s]
+Query: when was the manhattan project made?, Score: -6.489309787750244
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 47.31batches/s]
+Query: why did people believe in the manhattan project?, Score: -0.09251528233289719
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.90batches/s]
+Query: which project was the main goal of the manhattan project?, Score: -0.05839761346578598
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.90batches/s]
+Query: what was the main reason for the manhattan project?, Score: -0.06146787479519844
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.29batches/s]
+Query: why did manhattan project happen?, Score: -0.02800101228058338
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.58batches/s]
+Query: how did the manhattan project help to solve the problems of the atomic bomb?, Score: -0.0863860473036766
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.98batches/s]
+Query: why was the manhattan project a success essay?, Score: -0.002771942876279354
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.11batches/s]
+Query: which was the goal of the manhattan project?, Score: -0.037283141165971756
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 57.46batches/s]
+Query: why was the manhattan project called the manhattan project?, Score: -0.11521350592374802
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.17batches/s]
+Query: why was the manhattan project important?, Score: -0.06946759670972824
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.02batches/s]
+Query: what was the main objective of the manhattan project?, Score: -0.03342282399535179
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.16batches/s]
+Query: why did the manhattan project fail?, Score: -0.9105614423751831
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.15batches/s]
+Query: what was the purpose of manhattan project?, Score: -0.016757907345891
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.11batches/s]
+Query: what is the main goal of the manhattan project?, Score: -0.06008806452155113
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.92batches/s]
+Query: who was a key figure in the manhattan project?, Score: -3.7289786338806152
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.18batches/s]
+Query: why did the manhattan project happen?, Score: -0.03382902592420578
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.21batches/s]
+Query: why did the manhattan project occur?, Score: -0.057850632816553116
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.08batches/s]
+Query: what was the significance of the manhattan project?, Score: -0.06274446845054626
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.01batches/s]
+Query: why did they do the manhattan project essay?, Score: -0.004979708231985569
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 58.72batches/s]
+Query: which of the following was the goal of the manhattan project?, Score: -0.04130489379167557
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.21batches/s]
+Query: why did the manhattan project succeed?, Score: -0.017280960455536842
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.07batches/s]
+Query: what were the objectives of the manhattan project?, Score: -0.04287246614694595
+monoT5:   0%|          | 0/1 [00:00<?, ?batches/s]monoT5: 100%|██████████| 1/1 [00:00<00:00, 59.01batches/s]
+Query: what was the manhattan project essay?, Score: -0.004946376197040081
+Show_passage: The presence of communication amid scientific minds was equally important to the success of the Manhattan Project as scientific intellect was. The only cloud hanging over the impressive achievement of the atomic researchers and engineers is
+Show_queries:
+what their success truly meant; hundreds of thousands of innocent lives obliterated.?
+what was important to the success of the manhattan project?
+why was the manhattan project important?
+what was important about the manhattan project?
+why was the success of the manhattan project so important?
+who was the manhattan project a scientific project for?
+what was the manhattan project important for?
+why was the manhattan project a success?
+how was the success of the manhattan project?
+why was the manhattan project important to the success of the project?
+what is the importance of communication amongst scientific minds?
+what was the importance of scientific communication for the success of the manhattan project?
+what was the purpose of the manhattan project?
+why was the manhattan project significant?
+why did scientists believe in atomic power?
+why did scientists and engineers have to communicate?
+why did scientists and engineers want to be involved in the manhattan project?
+why are the scientists so valuable?
+which of the following was an important outcome of the manhattan project?
+why was the manhattan project successful?
+why was the manhattan project an important scientific achievement?
+what was the success of manhattan?
+what was the result of the manhattan project?
+why was communications important to the success of the manhattan project?
+why the manhattan project was important?
+why is it important to know?
+who is the manhattan project?
+what was the most important accomplishment to the success of the manhattan project?
+why was the manhattan project an important achievement?
+why was the manhattan project important to the success of the atomic bomb?
+how did the manhattan project impact scientists?
+what were the effects of the manhattan project?
+what were the results of the manhattan project and?
+how did they affect the public?
+what was the manhattan project?
+why did scientists contribute to the success of the manhattan project?
+why was communication important in the manhattan project?
+what was the effect of the manhattan project on the world?
+what was the importance of communication in the success of the manhattan project?
+Show_passage: The Manhattan Project and its atomic bomb helped bring an end to World War II. Its legacy of peaceful uses of atomic energy continues to have an impact on history and science.
+Show_queries:
+what were a major contributions to the manhattan effort?
+what impact did the manhattan project have on history?
+what is the manhattan project impact on world?
+what helped to end world war ii?
+why did the manhattan project help end world war ii?
+why did the manhattan project bring a end to world war ii?
+what helped bring the end of wwii and the beginning of a new era for the united states?
+why did the manhattan project happen?
+what was the manhattan project?
+why was the manhattan project important?
+why was the manhattan project necessary in wwii?
+what brought an end to world war ii?
+what was the main purpose of the manhattan project?
+why was the manhattan project a success?
+why did the manhattan project help bring ww2 to an end?
+why was nuclear energy important during wwii?
+what is the impact of manhattan project on the united states?
+what did ww2 end with the manhattan project?
+how did the manhattan project affect the world?
+why did the manhattan project end wwii?
+what was the effect of the manhattan project?
+who helped bring the end of world war ii?
+what did the manhattan project do to the world?
+what year did the manhattan project start?
+why did the manhattan project occur?
+what effect did the manhattan project have on the world?
+what year was the manhattan project?
+why was the manhattan project important to the united states?
+how did the manhattan project help end world war ii?
+how did the manhattan project help the end of?
+why did the manhattan atomic bomb happen?
+what impact did the manhattan project have on history and science?
+what year did the manhattan project occur?
+what was the effect of the manhattan project the manhattan project and its atomic bomb?
+what happened to the united states?
+what impact did the manhattan project have on history. why?
+Show_passage: Essay on The Manhattan Project - The Manhattan Project The Manhattan Project was to see if making an atomic bomb possible. The success of this project would forever change the world forever making it known that something this powerful can be manmade.
+Show_queries:
+what is manhattan project?
+why did manhattan happen?
+what was the purpose of the manhattan project?
+what was the manhattan project?
+why was the manhattan project successful?
+why was the manhattan project so successful?
+what was the manhattan project purpose?
+why was the manhattan project a success?
+when was the manhattan project made?
+why did people believe in the manhattan project?
+which project was the main goal of the manhattan project?
+what was the main reason for the manhattan project?
+why did manhattan project happen?
+how did the manhattan project help to solve the problems of the atomic bomb?
+why was the manhattan project a success essay?
+which was the goal of the manhattan project?
+why was the manhattan project called the manhattan project?
+why was the manhattan project important?
+what was the main objective of the manhattan project?
+why did the manhattan project fail?
+what was the purpose of manhattan project?
+what is the main goal of the manhattan project?
+who was a key figure in the manhattan project?
+why did the manhattan project happen?
+why did the manhattan project occur?
+what was the significance of the manhattan project?
+why did they do the manhattan project essay?
+which of the following was the goal of the manhattan project?
+why did the manhattan project succeed?
+what were the objectives of the manhattan project?
+what was the manhattan project essay?
+
+real	0m3.423s
+user	0m0.008s
+sys	0m3.338s
