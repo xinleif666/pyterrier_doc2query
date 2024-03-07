@@ -56,6 +56,27 @@ def score_queries_with_t5(passages, all_queries):
             res = scorer(df)
             print(f'Query: {query}, Score: {res.iloc[0]["score"]}')
 
+def score_queries_with_t5_and_filter(passages, all_queries, threshold=-5):
+    scorer = MonoT5ReRanker()
+    
+    filtered_queries = []
+
+    for (pid, passage), queries in zip(passages, all_queries):
+        print(f'Passage: {passage}')
+        
+        scores = []
+        
+        for query in queries:
+            df = pd.DataFrame([{'qid': pid, 'query': query, 'docno': '0', 'text': passage}])
+            res = scorer(df)
+            score = res.iloc[0]["score"]
+            scores.append((query, score))
+        
+        filtered_queries_for_passage = [query for query, score in scores if score > threshold]
+        filtered_queries.append(filtered_queries_for_passage)
+    
+    return filtered_queries
+
 def add_comma_to_file(input_file_path, output_file_path):
     with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
         lines = input_file.readlines()
@@ -70,18 +91,21 @@ def add_comma_to_file(input_file_path, output_file_path):
                 output_file.write(line)
 
 if __name__ == "__main__":
-    # file_path = './sample_data_test_evaluate_scores.json'
-    file_path = './modified_docs00.json'
+    file_path = './sample_data_test_evaluate_scores.json'
+    # file_path = './modified_docs00.json'
     # run this function only when we want to modify
     # the structure of input docsxx.json files
     # output_file_path = './modified_docs00.json'
     # add_comma_to_file(file_path, output_file_path)
 
     passages, all_queries = parse_contents(file_path)
-    score_queries_with_t5(passages, all_queries)
+    threshold = -0.02
 
-    for pid, passage in passages:
+    # score_queries_with_t5(passages, all_queries)
+    filtered_queries = score_queries_with_t5_and_filter(passages, all_queries, threshold)
+    
+    for (pid, passage), queries in zip(passages, filtered_queries):
         print(f'Show_passage: {passage}')
-        print('Show_queries:')
-        for query in all_queries[int(pid)]:
+        print('Filtered queries based on score threshold:')
+        for query in queries:
             print(query)
