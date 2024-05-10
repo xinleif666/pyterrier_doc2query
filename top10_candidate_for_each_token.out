@@ -1,0 +1,186 @@
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Selected Token: ▁which
+Selected Token: ▁project
+Selected Token: ▁was
+Selected Token: ▁also
+Selected Token: ▁known
+Selected Token: ▁as
+Selected Token: ▁the
+Selected Token: ▁scientific
+Selected Token: ▁intellect
+Selected Token: ?
+Selected Token: </s>
+Generated Query: which project was also known as the scientific intellect?
+
+Position 1: Selected Token = 'which'
+  Max Score: 1.0226
+  Average Score: -2.5595
+  Total Score: -25.5951
+  Candidate Token = 'why', Score = 1.0226
+  Candidate Token = 'what', Score = 0.1920
+  Candidate Token = 'which', Score = -1.8242
+  Candidate Token = 'who', Score = -1.9779
+  Candidate Token = 'how', Score = -2.5898
+  Candidate Token = 'when', Score = -3.3119
+  Candidate Token = 'scientific', Score = -3.9521
+  Candidate Token = 'the', Score = -4.0086
+  Candidate Token = '', Score = -4.4574
+  Candidate Token = 'was', Score = -4.6878
+
+Position 2: Selected Token = 'project'
+  Max Score: 0.0952
+  Average Score: -1.3712
+  Total Score: -13.7119
+  Candidate Token = 'of', Score = 0.0952
+  Candidate Token = 'was', Score = -0.1095
+  Candidate Token = 'is', Score = -0.5341
+  Candidate Token = 'project', Score = -0.8028
+  Candidate Token = 'statement', Score = -1.0745
+  Candidate Token = 'concept', Score = -1.4579
+  Candidate Token = 'idea', Score = -2.1883
+  Candidate Token = '', Score = -2.4956
+  Candidate Token = 'scientist', Score = -2.5013
+  Candidate Token = 'theory', Score = -2.6433
+
+Position 3: Selected Token = 'was'
+  Max Score: 0.8532
+  Average Score: -2.1185
+  Total Score: -21.1851
+  Candidate Token = 'was', Score = 0.8532
+  Candidate Token = 'is', Score = -0.6731
+  Candidate Token = 'did', Score = -2.0446
+  Candidate Token = '', Score = -2.0637
+  Candidate Token = 'focused', Score = -2.6401
+  Candidate Token = 'had', Score = -2.7251
+  Candidate Token = 'succeeded', Score = -2.8581
+  Candidate Token = 'involved', Score = -2.9846
+  Candidate Token = 'has', Score = -2.9969
+  Candidate Token = 'created', Score = -3.0521
+
+Position 4: Selected Token = 'also'
+  Max Score: 0.1015
+  Average Score: -1.5677
+  Total Score: -15.6773
+  Candidate Token = 'the', Score = 0.1015
+  Candidate Token = '', Score = -0.9597
+  Candidate Token = 'an', Score = -0.9809
+  Candidate Token = 'equally', Score = -1.4471
+  Candidate Token = 'important', Score = -1.5944
+  Candidate Token = 'also', Score = -1.7659
+  Candidate Token = 'as', Score = -2.0834
+  Candidate Token = 'successful', Score = -2.0837
+  Candidate Token = 'created', Score = -2.2275
+  Candidate Token = 'significant', Score = -2.6362
+
+Position 5: Selected Token = 'known'
+  Max Score: 0.6982
+  Average Score: -1.4132
+  Total Score: -14.1322
+  Candidate Token = 'known', Score = 0.6982
+  Candidate Token = 'important', Score = 0.4063
+  Candidate Token = '', Score = -0.8125
+  Candidate Token = 'the', Score = -0.8559
+  Candidate Token = 'an', Score = -1.2317
+  Candidate Token = 'called', Score = -1.5929
+  Candidate Token = 'associated', Score = -2.3068
+  Candidate Token = 'significant', Score = -2.5006
+  Candidate Token = 'successful', Score = -2.6865
+  Candidate Token = 'considered', Score = -3.2498
+
+Position 6: Selected Token = 'as'
+  Max Score: -1.4129
+  Average Score: -8.4975
+  Total Score: -84.9750
+  Candidate Token = 'as', Score = -1.4129
+  Candidate Token = 'for', Score = -6.2554
+  Candidate Token = 'to', Score = -8.2216
+  Candidate Token = 'by', Score = -8.4645
+  Candidate Token = 'in', Score = -8.5616
+  Candidate Token = '', Score = -9.5415
+  Candidate Token = 'the', Score = -10.3377
+  Candidate Token = 'scientific', Score = -10.6658
+  Candidate Token = 'when', Score = -10.7451
+  Candidate Token = 'under', Score = -10.7690
+
+Position 7: Selected Token = 'the'
+  Max Score: 0.6738
+  Average Score: -4.0549
+  Total Score: -40.5495
+  Candidate Token = 'the', Score = 0.6738
+  Candidate Token = 'scientific', Score = 0.0113
+  Candidate Token = '', Score = -3.4538
+  Candidate Token = 'science', Score = -4.9222
+  Candidate Token = 'scientifique', Score = -4.9573
+  Candidate Token = 'endeavor', Score = -5.0939
+  Candidate Token = '</s>', Score = -5.4743
+  Candidate Token = 'technological', Score = -5.5443
+  Candidate Token = 'an', Score = -5.7639
+  Candidate Token = 'endeavour', Score = -6.0247
+
+Position 8: Selected Token = 'scientific'
+  Max Score: 3.7378
+  Average Score: 0.7949
+  Total Score: 7.9492
+  Candidate Token = 'scientific', Score = 3.7378
+  Candidate Token = 'sein', Score = 1.3960
+  Candidate Token = 'endeavor', Score = 1.3525
+  Candidate Token = 'endeavour', Score = 0.7383
+  Candidate Token = '', Score = 0.6064
+  Candidate Token = 'scientifique', Score = 0.3297
+  Candidate Token = 'technological', Score = 0.1842
+  Candidate Token = 'că', Score = 0.0232
+  Candidate Token = 'nie', Score = -0.1388
+  Candidate Token = 'cea', Score = -0.2801
+
+Position 9: Selected Token = 'intellect'
+  Max Score: 4.5003
+  Average Score: -2.8438
+  Total Score: -28.4382
+  Candidate Token = 'intellect', Score = 4.5003
+  Candidate Token = 'mind', Score = -1.8020
+  Candidate Token = 'intelligence', Score = -2.7256
+  Candidate Token = 'endeavor', Score = -3.0961
+  Candidate Token = 'intellectual', Score = -3.3674
+  Candidate Token = 'minds', Score = -3.8073
+  Candidate Token = 'knowledge', Score = -3.9766
+  Candidate Token = 'brain', Score = -4.1924
+  Candidate Token = 'invention', Score = -4.9827
+  Candidate Token = 'imagination', Score = -4.9883
+
+Position 10: Selected Token = '?'
+  Max Score: 0.5674
+  Average Score: -3.2663
+  Total Score: -32.6632
+  Candidate Token = '?', Score = 0.5674
+  Candidate Token = '</s>', Score = -0.1958
+  Candidate Token = 'quiz', Score = -2.6688
+  Candidate Token = 'project', Score = -3.2204
+  Candidate Token = 'and', Score = -3.5340
+  Candidate Token = ',', Score = -4.0209
+  Candidate Token = 'or', Score = -4.2779
+  Candidate Token = '.', Score = -5.0405
+  Candidate Token = '', Score = -5.1017
+  Candidate Token = '(', Score = -5.1705
+
+Position 11: Selected Token = '</s>'
+  Max Score: -0.1455
+  Average Score: -5.2529
+  Total Score: -52.5293
+  Candidate Token = '</s>', Score = -0.1455
+  Candidate Token = 'quiz', Score = -3.4857
+  Candidate Token = '', Score = -4.6994
+  Candidate Token = 'why', Score = -5.6919
+  Candidate Token = 'brain', Score = -5.7870
+  Candidate Token = 'what', Score = -6.0331
+  Candidate Token = 'the', Score = -6.3947
+  Candidate Token = 'explain', Score = -6.4432
+  Candidate Token = '?', Score = -6.8082
+  Candidate Token = 'how', Score = -7.0407
+
+
+real	0m3.330s
+user	0m0.000s
+sys	0m3.249s
