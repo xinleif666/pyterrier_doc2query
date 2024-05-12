@@ -25,38 +25,39 @@ outputs = model.generate(
 sequences = outputs.sequences
 scores = outputs.scores
 
-generated_query = tokenizer.decode(sequences[0], skip_special_tokens=True)
-
 result = []
+vocab_size = len(tokenizer)
+max_scores_map = {token: float('-inf') for token in tokenizer.convert_ids_to_tokens(range(vocab_size))}
 
 for i, score_distribution in enumerate(scores):
     topk_scores, topk_indices = torch.topk(score_distribution, k=32000, dim=-1)
-    topk_indices_list = topk_indices.squeeze().tolist()
-    topk_scores_list = topk_scores.squeeze().tolist()
+
+    token_score_pairs = [
+        (tokenizer.convert_ids_to_tokens([idx])[0], score)
+        for idx, score in zip(topk_indices.squeeze().tolist(), topk_scores.squeeze().tolist())
+    ]
 
     selected_token = tokenizer.convert_ids_to_tokens([sequences[0][i + 1]])[0]
     print(f"Selected Token: {selected_token}")
 
-    candidates = [
-        {"token": tokenizer.convert_tokens_to_string([tokenizer.convert_ids_to_tokens([idx])[0]]), "score": score}
-        for idx, score in zip(topk_indices_list, topk_scores_list)
-    ]
+    candidates = sorted(token_score_pairs, key=lambda x: x[0])
 
-    max_score = max(topk_scores_list)
-    total_score = sum(topk_scores_list)
-    average_score = total_score / len(topk_scores_list)
+    for token, score in candidates:
+        if token in max_scores_map:
+            max_scores_map[token] = max(max_scores_map[token], score)
 
     result.append({
         "position": i,
-        "selected_token": tokenizer.convert_tokens_to_string([selected_token]),
-        "candidates": candidates,
+        "selected_token": selected_token,
+        "candidates": [{"token": token, "score": score} for token, score in candidates],
         "statistics": {
-            "max_score": max_score,
-            "average_score": average_score,
-            "total_score": total_score
+            "max_score": max(topk_scores.squeeze().tolist()),
+            "average_score": sum(topk_scores.squeeze().tolist()) / len(topk_scores.squeeze().tolist()),
+            "total_score": sum(topk_scores.squeeze().tolist())
         }
     })
 
+generated_query = tokenizer.decode(sequences[0], skip_special_tokens=True)
 print(f"Generated Query: {generated_query}\n")
 for res in result:
     print(f"Position {res['position'] + 1}: Selected Token = '{res['selected_token']}'")
@@ -66,3 +67,14 @@ for res in result:
     for candidate in res['candidates']:
         print(f"  Candidate Token = '{candidate['token']}', Score = {candidate['score']:.4f}")
     print()
+
+print("Max Scores Map with Tokens:")
+for token, score in sorted(max_scores_map.items()):
+    print(f"Token: '{token}', Max Score: {score:.4f}")
+
+sorted_max_scores = sorted(max_scores_map.items(), key=lambda x: x[1], reverse=True)
+top_100_max_scores = {token: score for token, score in sorted_max_scores[:100]}
+
+print("\nTop 100 Tokens with Maximum Scores:")
+for token, score in top_100_max_scores.items():
+    print(f"Token: '{token}', Max Score: {score:.4f}")
